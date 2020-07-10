@@ -22,7 +22,7 @@ surface: surface geometry file
 */
 
 sourceCase       "$FOAM_CASE";   // uses current case; can be a separate case
-sourcePatches    (frontAndBack);
+sourcePatches    (front);
 // surface       "geometry.obj"; // constructFrom surface
 
 // constructFrom patch: name of exposed "original" patch
