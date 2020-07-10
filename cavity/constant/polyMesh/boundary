@@ -10,12 +10,12 @@ FoamFile
     version     2.0;
     format      ascii;
     class       polyBoundaryMesh;
-    location    "constant/polyMesh";
+    location    "0.005/polyMesh";
     object      boundary;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-3
+4
 (
     movingWall
     {
@@ -35,8 +35,14 @@ FoamFile
     {
         type            empty;
         inGroups        List<word> 1(empty);
-        nFaces          800;
+        nFaces          400;
         startFace       840;
+    }
+    ascii
+    {
+        type            patch;
+        nFaces          400;
+        startFace       1240;
     }
 )
 

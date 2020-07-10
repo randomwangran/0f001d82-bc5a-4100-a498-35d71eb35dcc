@@ -10,8 +10,8 @@ FoamFile
     version     2.0;
     format      ascii;
     class       labelList;
-    note        "nPoints: 882 nCells: 400 nFaces: 1640 nInternalFaces: 760";
-    location    "constant/polyMesh";
+    note        "nPoints:882  nCells:400  nFaces:1640  nInternalFaces:760";
+    location    "0.005/polyMesh";
     object      neighbour;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
