@@ -15,28 +15,34 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-3
+4
 (
     movingWall
     {
         type            wall;
         inGroups        List<word> 1(wall);
-        nFaces          20;
-        startFace       760;
+        nFaces          200;
+        startFace       11200;
     }
     fixedWalls
     {
         type            wall;
         inGroups        List<word> 1(wall);
-        nFaces          60;
-        startFace       780;
+        nFaces          600;
+        startFace       11400;
     }
     frontAndBack
     {
         type            empty;
         inGroups        List<word> 1(empty);
-        nFaces          800;
-        startFace       840;
+        nFaces          400;
+        startFace       12000;
+    }
+    ascii
+    {
+        type            patch;
+        nFaces          400;
+        startFace       12400;
     }
 )
 

@@ -22,7 +22,7 @@ surface: surface geometry file
 */
 
 sourceCase       "$FOAM_CASE";   // uses current case; can be a separate case
-sourcePatches    (frontAndBack);
+sourcePatches    (ascii);
 // surface       "geometry.obj"; // constructFrom surface
 
 // constructFrom patch: name of exposed "original" patch
@@ -62,7 +62,7 @@ linearDirectionCoeffs
 
 sectorCoeffs // used by sector and wedge extrusion
 {
-    axisPt       (0 0 0);
+    axisPt       (0 0 0.01);
     axis         (1 0 0);
     angle        60;
 }
