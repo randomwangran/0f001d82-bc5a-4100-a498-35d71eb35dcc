@@ -20,25 +20,37 @@ FoamFile
 actions
 (
 
-    {
-        name    front;
-        type    faceSet;
-        action  new;
-        source  boxToCell;
-        sourceInfo
-        {
-            box (0 0 0.005)(.1 .1 0.01);
-        }
-    }
+    //-wr    {
+    //-wr        name    front;
+    //-wr        type    faceSet;
+    //-wr        action  new;
+    //-wr        source  boxToCell;
+    //-wr        sourceInfo
+    //-wr        {
+    //-wr            box (0 0 0.005)(.1 .1 0.01);
+    //-wr        }
+    //-wr    }
+    //-wr
+    //-wr    {
+    //-wr        name    back;
+    //-wr        type    faceSet;
+    //-wr        action  new;
+    //-wr        source  boxToCell;
+    //-wr        sourceInfo
+    //-wr        {
+    //-wr          box (0 0 0.005)(.1 .1 0.01);
+    //-wr        }
+    //-wr    }
 
-    {
-        name    back;
+     {
+        name    GreatWall;
         type    faceSet;
         action  new;
         source  boxToCell;
         sourceInfo
         {
-          box (0 0 0.005)(.1 .1 0.01);
+          box (-0.00001 -.000001 -0.00001)(.1000001 .1000001 0.01001);
+          //-wr    box (0 0 0.005)(.1 .1 0.01);
         }
     }
 
